@@ -1,0 +1,12 @@
+img.logo-main {
+    margin: 0 auto;
+    display: block;
+
+    @include for-phone-only {
+        height: 120px;
+    }
+
+    @include for-tablet-only {
+        height: 150px;
+    }
+}

@@ -3,4 +3,61 @@ layout: layouts/base.njk
 title: Contact Us
 ---
 
-<h1>Contact Us</h1>
+<div class="row">
+    <h1>Contact Us</h1>
+</div>
+
+<div class="row">
+    <p>Please enter your contact details below.</p>
+    <form
+        class="contact-form"
+        name="contactform"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+    >
+        <div hidden aria-hidden="true">
+            <label>
+                Don’t fill this out if you're human: 
+                <input name="bot-field" />
+            </label>
+        </div>
+        <div>
+            <label for="name">Your name</label>
+            <input type="text" name="name" placeholder="Name"  id="name" required />
+        </div>
+        <div>
+            <label for="email">Your email address</label>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    const processForm = form => {
+        const data = new FormData(form);
+        data.append('form-name', 'contactform');
+        fetch('/', {
+            method: 'POST',
+            body: data,
+        })
+        .then(() => {
+            form.innerHTML = `<div class="form--success">Almost there! Check your inbox for a confirmation e-mail.</div>`;
+        })
+        .catch(error => {
+            form.innerHTML = `<div class="form--error">Error: ${error}</div>`;
+        })
+    }
+
+    const emailForm = document.querySelector('.contact-form')
+    if (emailForm) {
+        emailForm.addEventListener('submit', e => {
+            e.preventDefault();
+            console.log("SUBMITTED")
+            {# processForm(emailForm); #}
+        })
+    }
+</script>
