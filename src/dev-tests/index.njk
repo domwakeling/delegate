@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+title: Dev tests index
+description: Index
+---
+
+<div class="row">
+    <h1>Test pages to trial/confirm stylistic choices</h1>
+    <p>The site is <b>responsive</b>, meaning that the style/layouts change based on screen size.
+        If you view the page on a mobile phone, you should see that the image below fills the
+        width of the screen, whilst the text margins for this paragraph are slightly indented.</p>
+</div>
+<img style="width: 100%" src="/images/example-hero.jpg" alt="Virtual PA services" />
+<div class="row">
+    <p>Whereas if you use a larger device, you will see that the image above is centred with
+        a margin either side (width of the margin depends on the screen) and the text margins are
+        aligned with the image.</p>
+</div>
+
+</div><!-- /div.container -->
+
+<div class="banner col-d900 bg-d500">
+    <div class="container">
+        <div class="row">
+            <h2>Banner!</h2>
+            <p>This is a <b>banner</b> &mdash; a strip of colour (or potentially an image) which
+                stretches across the entire screen regardless of device width. Within the banner the
+                actual content still obeys the same rules as the text/images above.</p>
+        </div>
+    </div>
+</div>
+      
+
+<div class="container"><!-- open a new container since closed the main one above -->
+
+<div class="row">
+    <p>The pages that are available in this test area are:</p>
+    <ul>
+        <li><a href="/dev-tests/">Index</a></li>
+        {% set tests = collections.devtest %}
+        {% for test in tests %}
+            <li>
+                <a href="{{ test.url | url }}">
+                    {{ test.data.title }}
+                </a> - {{ test.data.description}}
+            </li>
+        {% endfor%}
+    </ul>
+</div>

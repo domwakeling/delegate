@@ -1,0 +1,53 @@
+---
+layout: layouts/devtest.njk
+title: Color swabs
+tags: devtest
+description: Summary of colors available in style sheet
+---
+
+<div class="row">
+    <h1>Color swabs for reference & comparison</h1>
+    <p>Within SASS, colors are designated in the following hierarchy:</p>
+    <ul>
+        <li>base individual colors are designated using a name, eg <code>$color_delegate</code></li>
+        <li>variants are designated using a letter/number combination, eg <code>$color_d500</code></li>
+        <li><b>classes</b> use a <i>dash</i> (not underscore) and letter/number, eg
+            <code>bg-d100</code> or <code>col-d500</code></li>
+    </ul>
+
+    <h2 class="as-h4 col-d500">'Delegate' colours</h4>
+    <p>Primary brand color. <code>d100</code> is the primary text color throughout the site, whilst
+        <code>d500</code> is the primary brand color. The combinations shown below are designed to meet
+        accessibility contrast requirements (and <code>d900</code> has been lightened for this
+        purpose).</p>
+    <div>
+        <div class="color-test-swab bg-d100 col-d900">100 900</div>
+        <div class="color-test-swab bg-d300 col-d900">300 900</div>
+        <div class="color-test-swab bg-d500 col-d900">500 900</div>
+        <div class="color-test-swab bg-d700 col-d100">700 100</div>
+        <div class="color-test-swab bg-d900 col-d100">900 100</div>
+    </div>
+
+    <h2 class="as-h4 col-c500">Complementary colours</h4>
+    <p>Complementary color - using color theory, opposite side of the color wheel and sufficiently
+        saturated. Uses a <code>c</code> prefix in class names.</p>
+    <div>
+        <div class="color-test-swab bg-c100 col-c900">100 900</div>
+        <div class="color-test-swab bg-c300 col-c900">300 900</div>
+        <div class="color-test-swab bg-c500 col-c900">500 900</div>
+        <div class="color-test-swab bg-c700 col-c100">700 100</div>
+        <div class="color-test-swab bg-c900 col-c100">900 100</div>
+    </div>
+
+    <h2 class="as-h4 col-g500">Greys</h4>
+    <p>Desaturated version of the 'delegate' colors. Note that within SASS there is no
+        <code>$color_grey</code> variable (<code>g100</code> etc are desaturated versions of the
+        equivalent delegate color).</p>
+    <div>
+        <div class="color-test-swab bg-g100 col-g900">100 900</div>
+        <div class="color-test-swab bg-g300 col-g900">300 900</div>
+        <div class="color-test-swab bg-g500 col-g900">500 900</div>
+        <div class="color-test-swab bg-g700 col-g100">700 100</div>
+        <div class="color-test-swab bg-g900 col-g100">900 100</div>
+    </div>
+</div>

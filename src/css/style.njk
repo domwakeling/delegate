@@ -1,0 +1,21 @@
+---
+permalink: /css/style.css
+---
+
+{# start with a normalized css #}
+{% set norm %}
+    {% include "styles/normalize.css" %}
+{% endset %}
+{{ norm | safe }}
+
+{# bring in all scss files ... #}
+{% set scss %}
+    {% include "styles/_size_reset.scss" %} 
+    {% include "styles/_color.scss" %}
+    {% include "styles/_layout.scss" %}
+    {% include "styles/_fonts.scss" %}
+    {% include "styles/_common_elements.scss" %}
+{% endset %}
+
+{# and then convert it all ... #}
+{{ scss | convertSASS | safe }}

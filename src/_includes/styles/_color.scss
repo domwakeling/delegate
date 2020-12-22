@@ -1,0 +1,68 @@
+$color_delegate: hsl(185, 29%, 37%);
+
+$color_complementary: hsl(5, 59%, 37%);
+
+$color_d100: darken($color_delegate, 25%);
+$color_d300: darken($color_delegate, 10%);
+$color_d500: $color_delegate;
+$color_d700: lighten($color_delegate, 30%);
+$color_d900: lighten($color_delegate, 57%);
+
+$color_c100: darken($color_complementary, 25%);
+$color_c300: darken($color_complementary, 10%);
+$color_c500: $color_complementary;
+$color_c700: lighten($color_complementary, 30%);
+$color_c900: lighten($color_complementary, 57%);
+
+$color_g100: desaturate($color_d100, 50%);
+$color_g300: desaturate($color_d300, 50%);
+$color_g500: desaturate($color_d500, 50%);
+$color_g700: desaturate($color_d700, 50%);
+$color_g900: desaturate($color_d900, 50%);
+
+.bg-d100 { background-color: $color_d100;}
+.bg-d300 { background-color: $color_d300;}
+.bg-d500 { background-color: $color_d500;}
+.bg-d700 { background-color: $color_d700;}
+.bg-d900 { background-color: $color_d900;}
+
+.col-d100 { color: $color_d100;}
+.col-d300 { color: $color_d300;}
+.col-d500 { color: $color_d500;}
+.col-d700 { color: $color_d700;}
+.col-d900 { color: $color_d900;}
+
+.bg-c100 { background-color: $color_c100;}
+.bg-c300 { background-color: $color_c300;}
+.bg-c500 { background-color: $color_c500;}
+.bg-c700 { background-color: $color_c700;}
+.bg-c900 { background-color: $color_c900;}
+
+.col-c100 { color: $color_c100;}
+.col-c300 { color: $color_c300;}
+.col-c500 { color: $color_c500;}
+.col-c700 { color: $color_c700;}
+.col-c900 { color: $color_c900;}
+
+.bg-g100 { background-color: $color_g100;}
+.bg-g300 { background-color: $color_g300;}
+.bg-g500 { background-color: $color_g500;}
+.bg-g700 { background-color: $color_g700;}
+.bg-g900 { background-color: $color_g900;}
+
+.col-g100 { color: $color_g100;}
+.col-g300 { color: $color_g300;}
+.col-g500 { color: $color_g500;}
+.col-g700 { color: $color_g700;}
+.col-g900 { color: $color_g900;}
+
+
+.color-test-swab {
+    border-radius: 5px;
+    padding: 5px 5px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 10px 5px;
+    display: inline-block;
+}
