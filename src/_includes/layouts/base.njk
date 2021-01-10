@@ -23,9 +23,7 @@ metacontent: META CONTENT REQUIRED
     </head>
     <body>
         <nav id="main-nav">
-            <div class="container largest col-c500">
-                {% include "navbar.njk" %}
-            </div>
+            {% include "navbar.njk" %}
         </nav>
         <div class="container">
             {{ content | safe }}

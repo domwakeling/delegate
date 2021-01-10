@@ -1,29 +1,33 @@
 {% set links = navmenulinks %}
 
-<button class="icon">
-    <div class="icon-bar"></div>
-    <div class="icon-bar"></div>
-    <div class="icon-bar"></div>
-</button>
-<div>
-    <ul>
-        {%- for item in links -%}
-        <li>
-            <a href="{{ item.link }}">
-                {{ item.text }}
-            </a>
-        </li>
-        {%- endfor -%}
-    </ul>
-</div>
-<div id="menu-responsive">
-    <ul>
-        {%- for item in links -%}
-        <li>
-            <a href="{{ item.link }}">
-                {{ item.text }}
-            </a>
-        </li>
-        {%- endfor -%}
-    </ul>
+<div class="container">
+    <div class="row">
+        <button class="icon">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </button>
+        <div>
+            <ul>
+                {%- for item in links -%}
+                <li>
+                    <a href="{{ item.link }}">
+                        {{ item.text }}
+                    </a>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        <div id="menu-responsive">
+            <ul>
+                {%- for item in links -%}
+                <li>
+                    <a href="{{ item.link }}">
+                        {{ item.text }}
+                    </a>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    </div>
 </div>

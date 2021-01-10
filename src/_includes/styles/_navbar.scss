@@ -4,30 +4,42 @@
     padding: 0.3rem 0;
     margin-bottom: 1.0rem;
     box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0,0,0,0.25);
-    // background-color: $color_delegate;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     color: $color_d100 !important;
+
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            display: inline;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+
+            &:first-of-type {
+                padding-left: 0;
+            }
+        }
+    }
 
     a {
         color: $color_d100;
         text-decoration: none;
     
-        &.brand {
-            h3 {
-                color: $color_d900;
-                font-size: 1.5em;
-                line-height: 100%;
-                margin-top: 2px;
-                margin-bottom: 2px;
-                display: inline-block;
-                @media (max-width: 500px) {
-                    font-size: 1.2em;
-                    padding-top: 0.2em;
-                    padding-bottom: 0.2em;
-                }
-            }
-        }
+        // &.brand {
+        //     h3 {
+        //         color: $color_d900;
+        //         font-size: 1.5em;
+        //         line-height: 100%;
+        //         margin-top: 2px;
+        //         margin-bottom: 2px;
+        //         display: inline-block;
+        //         @media (max-width: 500px) {
+        //             font-size: 1.2em;
+        //             padding-top: 0.2em;
+        //             padding-bottom: 0.2em;
+        //         }
+        //     }
+        // }
     }
 
     img {
@@ -69,6 +81,7 @@
         border-radius: 4px 4px 4px 4px;
         float: right;
         display: block;
+        margin-top: -0.5rem;
         // recognise when mouse hovers over the button
         &:hover {
             background-color: lighten($color_delegate, 10%);
