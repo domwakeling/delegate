@@ -11,6 +11,10 @@ const data = [
         "text": "Contact",
         "link": "/contact",
     },
+    {
+        "text": "development",
+        "link": "/dev-tests/",
+    }
 ];
 
 module.exports = () => {
