@@ -1,12 +1,28 @@
-.social-media-icon {
-    width: 5rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    &:first-of-type {
-        margin-left: 0;
+footer {
+
+    margin-top: 1rem;
+
+    #social-media {
+        width: 5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
-    &:last-of-type {
-        margin-right: 0;
+
+    .social-media-icon {
+        width: 5rem;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
+
+    h2, p {
+        text-align: center;
+    }
+
 }

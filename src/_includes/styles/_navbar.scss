@@ -1,10 +1,10 @@
 #main-nav {
-    border-bottom: 1px solid $color_d500;
-    background-color: $color_d900;
+    border-bottom: 1px solid $color_p500;
+    background-color: $color_p900;
     padding: 0.3rem 0;
     margin-bottom: 1.0rem;
     box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0,0,0,0.25);
-    color: $color_d100 !important;
+    color: $color_p100 !important;
 
     ul {
         padding-left: 0;
@@ -22,12 +22,12 @@
     }
 
     a {
-        color: $color_d100;
+        color: $color_p100;
         text-decoration: none;
     
         // &.brand {
         //     h3 {
-        //         color: $color_d900;
+        //         color: $color_p900;
         //         font-size: 1.5em;
         //         line-height: 100%;
         //         margin-top: 2px;
@@ -63,7 +63,7 @@
                     text-align: left;
                     padding-top: 0.4em;
                     padding-bottom: 0.4em;
-                    border-bottom: 1px solid $color_d900;
+                    border-bottom: 1px solid $color_p900;
                     &:last-child {
                         border-bottom: none !important;
                     }
@@ -76,15 +76,15 @@
     .icon {
         width: 40px;
         padding: 1px 8px;
-        background-color: $color_delegate;
-        border: 1px solid $color_d900;
+        background-color: $color_primary;
+        border: 1px solid $color_p900;
         border-radius: 4px 4px 4px 4px;
         float: right;
         display: block;
         margin-top: -0.5rem;
         // recognise when mouse hovers over the button
         &:hover {
-            background-color: lighten($color_delegate, 10%);
+            background-color: lighten($color_primary, 10%);
         }
         // don't show at all on a wide screen
         @include for-desktop-only {
@@ -92,7 +92,7 @@
         }
         // the horizontal bars that make it a burger
         .icon-bar {
-            background-color: $color_d900;
+            background-color: $color_p900;
             border-radius: 2px 2px 2px 2px;
             height: 2px;
             margin: 6px 0;

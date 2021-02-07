@@ -1,5 +1,14 @@
 img.headshot {
+    box-shadow: 0 0 1rem $color_g700;
     float: right;
     margin-left: 1rem;
     margin-bottom: 1rem;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+    img.headshot {
+        width: 150px;
+    }
 }

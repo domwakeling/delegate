@@ -1,27 +1,27 @@
 hr {
-    border-bottom-color: $color_d500;
+    border-bottom-color: $color_p500;
     border-top-width: 0;
     border-left-width: 0;
     border-right-width: 0;
 }
 
 blockquote {
-    border-left: 0.5rem solid $color_d700;
+    border-left: 0.5rem solid $color_p700;
     padding-left: 1.0rem;
     &.d100 {
-        border-color: $color_d100;
+        border-color: $color_p100;
     }
     &.d300 {
-        border-color: $color_d300;
+        border-color: $color_p300;
     }
     &.d500 {
-        border-color: $color_d500;
+        border-color: $color_p500;
     }
     &.d700 {
-        border-color: $color_d700;
+        border-color: $color_p700;
     }
     &.d900 {
-        border-color: $color_d900;
+        border-color: $color_p900;
     }
     &.c100 {
         border-color: $color_c100;

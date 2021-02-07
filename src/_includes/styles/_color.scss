@@ -1,12 +1,12 @@
-$color_delegate: hsl(185, 29%, 37%);
+$color_primary: hsl(185, 29%, 37%);
 
 $color_complementary: hsl(5, 59%, 37%);
 
-$color_d100: darken($color_delegate, 25%);
-$color_d300: darken($color_delegate, 10%);
-$color_d500: $color_delegate;
-$color_d700: lighten($color_delegate, 30%);
-$color_d900: lighten($color_delegate, 57%);
+$color_p100: darken($color_primary, 25%);
+$color_p300: darken($color_primary, 10%);
+$color_p500: $color_primary;
+$color_p700: lighten($color_primary, 30%);
+$color_p900: lighten($color_primary, 57%);
 
 $color_c100: darken($color_complementary, 25%);
 $color_c300: darken($color_complementary, 10%);
@@ -14,23 +14,23 @@ $color_c500: $color_complementary;
 $color_c700: lighten($color_complementary, 30%);
 $color_c900: lighten($color_complementary, 57%);
 
-$color_g100: desaturate($color_d100, 50%);
-$color_g300: desaturate($color_d300, 50%);
-$color_g500: desaturate($color_d500, 50%);
-$color_g700: desaturate($color_d700, 50%);
-$color_g900: desaturate($color_d900, 50%);
+$color_g100: desaturate($color_p100, 50%);
+$color_g300: desaturate($color_p300, 50%);
+$color_g500: desaturate($color_p500, 50%);
+$color_g700: desaturate($color_p700, 50%);
+$color_g900: desaturate($color_p900, 50%);
 
-.bg-d100 { background-color: $color_d100;}
-.bg-d300 { background-color: $color_d300;}
-.bg-d500 { background-color: $color_d500;}
-.bg-d700 { background-color: $color_d700;}
-.bg-d900 { background-color: $color_d900;}
+.bg-p100 { background-color: $color_p100;}
+.bg-p300 { background-color: $color_p300;}
+.bg-p500 { background-color: $color_p500;}
+.bg-p700 { background-color: $color_p700;}
+.bg-p900 { background-color: $color_p900;}
 
-.col-d100 { color: $color_d100;}
-.col-d300 { color: $color_d300;}
-.col-d500 { color: $color_d500;}
-.col-d700 { color: $color_d700;}
-.col-d900 { color: $color_d900;}
+.col-p100 { color: $color_p100;}
+.col-p300 { color: $color_p300;}
+.col-p500 { color: $color_p500;}
+.col-p700 { color: $color_p700;}
+.col-p900 { color: $color_p900;}
 
 .bg-c100 { background-color: $color_c100;}
 .bg-c300 { background-color: $color_c300;}

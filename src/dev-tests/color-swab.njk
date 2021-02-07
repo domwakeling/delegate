@@ -9,24 +9,25 @@ description: Summary of colors available in style sheet
     <h1>Color swabs for reference & comparison</h1>
     <p>Within SASS, colors are designated in the following hierarchy:</p>
     <ul>
-        <li>base individual colors are designated using a name, eg <code>$color_delegate</code></li>
-        <li>variants are designated using a letter/number combination, eg <code>$color_d500</code></li>
+        <li>base individual colors are designated using a name, eg <code>$color_primary</code></li>
+        <li>variants are designated using a letter/number combination, eg <code>$color_p500</code></li>
         <li><b>classes</b> use a <i>dash</i> (not underscore) and letter/number, eg
-            <code>bg-d100</code> or <code>col-d500</code></li>
+            <code>bg-p100</code> or <code>col-p500</code></li>
     </ul>
 
-    <h2 class="as-h4 col-d500">'Delegate' colours</h4>
+    <h2 class="as-h4 col-p500">Primary colours</h4>
     <p>Primary brand color. <code>d100</code> is the primary text color throughout the site, whilst
-        <code>d500</code> is the primary brand color. The combinations shown below are designed to meet
-        accessibility contrast requirements (and <code>d900</code> has been lightened for this
+        <code>d500</code> is the primary brand color. The combinations shown below are designed to
+        meet accessibility contrast requirements (and <code>d900</code> has been lightened for this
         purpose).</p>
     <div>
-        <div class="color-test-swab bg-d100 col-d900">100 900</div>
-        <div class="color-test-swab bg-d300 col-d900">300 900</div>
-        <div class="color-test-swab bg-d500 col-d900">500 900</div>
-        <div class="color-test-swab bg-d700 col-d100">700 100</div>
-        <div class="color-test-swab bg-d900 col-d100">900 100</div>
+        <div class="color-test-swab bg-p100 col-p900">100 900</div>
+        <div class="color-test-swab bg-p300 col-p900">300 900</div>
+        <div class="color-test-swab bg-p500 col-p900">500 900</div>
+        <div class="color-test-swab bg-p700 col-p100">700 100</div>
+        <div class="color-test-swab bg-p900 col-p100">900 100</div>
     </div>
+    <br />
 
     <h2 class="as-h4 col-c500">Complementary colours</h4>
     <p>Complementary color - using color theory, opposite side of the color wheel and sufficiently
@@ -38,6 +39,7 @@ description: Summary of colors available in style sheet
         <div class="color-test-swab bg-c700 col-c100">700 100</div>
         <div class="color-test-swab bg-c900 col-c100">900 100</div>
     </div>
+    <br />
 
     <h2 class="as-h4 col-g500">Greys</h4>
     <p>Desaturated version of the 'delegate' colors. Note that within SASS there is no

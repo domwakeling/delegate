@@ -3,7 +3,7 @@
 body {
     font-size: 1.6em;
     line-height: 1.6;
-    color: $color_d100;
+    color: $color_p100;
     font-family: 'Open Sans', serif;
 }
 
@@ -23,6 +23,7 @@ h1, h2.as-h1, h3.as-h1, h4.as-h1, h5.as-h1, h6.as-h1 {
     font-size: 3.6rem;
     line-height: 1.2;
     letter-spacing: -.1rem;
+    color: $color_p500;
 }
 h2, h1.as-h2, h3.as-h2, h4.as-h2, h5.as-h2, h6.as-h2 {
     font-size: 3.0rem;
