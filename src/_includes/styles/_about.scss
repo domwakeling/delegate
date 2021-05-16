@@ -4,7 +4,8 @@ img.headshot {
     margin-left: 1rem;
     margin-bottom: 1rem;
     width: 300px;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid $color_p900;
 }
 
 @media (max-width: 600px) {

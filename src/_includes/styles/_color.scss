@@ -1,18 +1,18 @@
-$color_primary: hsl(185, 29%, 37%);
+$color_primary: #6286f2;
 
-$color_complementary: hsl(5, 59%, 37%);
+$color_complementary: #f29626;
 
-$color_p100: darken($color_primary, 25%);
-$color_p300: darken($color_primary, 10%);
+$color_p100: darken($color_primary, 45%);
+$color_p300: darken($color_primary, 15%);
 $color_p500: $color_primary;
-$color_p700: lighten($color_primary, 30%);
-$color_p900: lighten($color_primary, 57%);
+$color_p700: lighten($color_primary, 20%);
+$color_p900: lighten($color_primary, 33%);
 
 $color_c100: darken($color_complementary, 25%);
-$color_c300: darken($color_complementary, 10%);
+$color_c300: darken($color_complementary, 15%);
 $color_c500: $color_complementary;
-$color_c700: lighten($color_complementary, 30%);
-$color_c900: lighten($color_complementary, 57%);
+$color_c700: lighten($color_complementary, 20%);
+$color_c900: lighten($color_complementary, 42%);
 
 $color_g100: desaturate($color_p100, 50%);
 $color_g300: desaturate($color_p300, 50%);
