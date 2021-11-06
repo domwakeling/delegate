@@ -1,5 +1,5 @@
 const beautify_html = require("js-beautify").html;
-const sass = require('dart-sass');
+const sass = require('sass');
 const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
@@ -31,6 +31,9 @@ module.exports = function (eleventyConfig) {
 
     // copy the images folder
     eleventyConfig.addPassthroughCopy("src/images");
+
+    // send contents of admin file straight through
+    eleventyConfig.addPassthroughCopy('src/admin');
 
     // because we're making a function we need to return the "normal" exports object
     return {
