@@ -8,6 +8,15 @@ backend:
 media_folder: "src/images" # Media files will be stored in the repo under images/uploads
 public_folder: "/images"
 
+# include a site_url for various internal CMS issues
+site_url: https://delegate-site.netlify.app/
+
+# including a display_url will mean there's a link in your CMS to that URL
+display_urL: https://delegate-site.netlify.app/
+
+# Uncomment below to have a curstom logo image rather than the default; make it 300sq transparent
+#logo_url: /images/logo.png
+
 collections:
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
