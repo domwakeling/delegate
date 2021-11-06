@@ -1,9 +1,11 @@
-# Delegate Virtual PA Services website (kind of!)
+# Delegate website
 
-This repo **was** going to contain the code for a business website for a friend, but is now going
-to be used as a tech-test/tech-demo based on the principles of that website (the friend in question
-was setting up their own business but is now in full-time employment again so doesn't require the
-site).
+> *This repo **was** originally going to contain the code for a business website for a friend,
+> but since (happily) she found alterative employment, it's now going to be used a test-bed.*
+
+## NetlifyCMS
+
+The site is configured to use NetlifyCMS deployed on Netlify using Netlify Identify.
 
 The content has been heavily influenced (and in some cases borrowed wholesale) from other websites;
 if you're *actually* looking for a Virtual PA, please have a look at those websites:
