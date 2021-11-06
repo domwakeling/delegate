@@ -1,10 +1,10 @@
 #main-nav {
-    border-bottom: 1px solid $color_c300;
-    background-color: $color_c500;
+    border-bottom: 1px solid $color_p100;
+    background-color: $color_p500;
     padding: 0.3rem 0;
     margin-bottom: 1.0rem;
     box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0,0,0,0.25);
-    color: $color_c900 !important;
+    color: $color_p900 !important;
 
     ul {
         padding-left: 0;
@@ -22,24 +22,8 @@
     }
 
     a {
-        color: $color_c900;
+        color: $color_p900;
         text-decoration: none;
-    
-        // &.brand {
-        //     h3 {
-        //         color: $color_p900;
-        //         font-size: 1.5em;
-        //         line-height: 100%;
-        //         margin-top: 2px;
-        //         margin-bottom: 2px;
-        //         display: inline-block;
-        //         @media (max-width: 500px) {
-        //             font-size: 1.2em;
-        //             padding-top: 0.2em;
-        //             padding-bottom: 0.2em;
-        //         }
-        //     }
-        // }
     }
 
     img {

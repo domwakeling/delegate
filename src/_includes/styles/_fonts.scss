@@ -75,9 +75,9 @@ small, .smallest {
 ---------------------------------------------------- */
 
 a {
-    color: $color_c500;
+    color: $color_p500;
     &:hover {
-        color: $color_c700;
+        color: $color_p700;
     }
 }
 
@@ -88,5 +88,5 @@ code {
     background-color: $color_g900;
     padding: 0.2rem 0.5rem;
     border-radius: 0.5rem;
-    color: $color_c500;
+    color: $color_p500;
 }

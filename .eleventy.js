@@ -1,6 +1,25 @@
 const beautify_html = require("js-beautify").html;
 const sass = require('sass');
 const CleanCSS = require("clean-css");
+const Image = require("@11ty/eleventy-img");
+
+async function generateFullWidthImage(src, alt) {
+    let metadata = await Image(src, {
+        widths: [960, 1920],
+        formats: ["jpeg"],
+        outputDir: "./_site/images/",
+        urlPath: "/images"
+    });
+    let data = metadata.jpeg;
+    console.log(data[0].url);
+    return (`<img srcset="${data[0].url}, ${data[1].url} 2x"
+                  src="${data[0].url}"
+                  alt="${alt}"
+                  loading="lazy"
+                  style="width:100%"
+                  decoding="async" >`)
+    // return `<img src="${data.url}" alt="${alt}" class="tweet_img" loading="lazy" decoding="async">`;
+}
 
 module.exports = function (eleventyConfig) {
 
@@ -29,11 +48,12 @@ module.exports = function (eleventyConfig) {
         return JSON.stringify(value);
     });
 
-    // copy the images folder
-    eleventyConfig.addPassthroughCopy("src/images");
-
-    // send contents of admin file straight through
+    // copy the src/images & src/admin folders
+    eleventyConfig.addPassthroughCopy({"src/images": "./images"});
     eleventyConfig.addPassthroughCopy('src/admin');
+
+    // image processing functions as shortcodes
+    eleventyConfig.addNunjucksAsyncShortcode("fullWidthImage", generateFullWidthImage);
 
     // because we're making a function we need to return the "normal" exports object
     return {
