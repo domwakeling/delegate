@@ -1,7 +1,7 @@
 ---
 title: TITLE REQUIRED
-description: DESCRIPTION REQUIRED
-metacontent: META CONTENT REQUIRED
+description: Welcome to Delegate
+metacontent: []
 ---
 
 <!doctype html>
@@ -9,10 +9,10 @@ metacontent: META CONTENT REQUIRED
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta
-            name="{{ description }}" 
-            content="{{ metacontent }}"
-        >
+        <meta name="description" content="{{ description }}">
+        {% for item in metacontent %}
+            <meta name="{{ item[0] }}" content="{{ item[1] }}">
+        {% endfor %}
         <title>{{ title }}</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link

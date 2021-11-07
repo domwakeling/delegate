@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+title: Delegate - Articles
+---
+
+{% for article in collections.article %}
+    <p>{{ article.data.title }}</p>
+{% endfor %}
