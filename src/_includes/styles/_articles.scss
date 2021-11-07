@@ -20,3 +20,17 @@
         }
     }
 }
+
+.pagination-container {
+    .pagination-lozenge {
+        display: inline-block;
+        background-color: $color_p300;
+        padding: 1rem;
+        border-radius: 1rem;
+        a {
+            color: $color_p900;
+            text-decoration: none;
+        }
+        cursor: pointer;
+    }
+}

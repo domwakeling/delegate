@@ -1,12 +1,17 @@
 ---
 layout: layouts/base.njk
 title: Delegate - Articles
+pagination:
+  data: collections.article
+  reverse: true
+  size: 6
+permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
 ---
 
 <div class="row">
     <h1>Articles</h1>
     <div class="article-container">
-        {% for article in collections.article %}
+        {% for article in pagination.items %}
             <div class="article">
                 <div class="article-content">
                     <a href="{{ article.url }}">
@@ -16,4 +21,18 @@ title: Delegate - Articles
             </div>  
         {% endfor %}
     </div>
+    <br />
+    <div class="pagination-container">
+        {% if pagination.pageNumber > 0 %}
+            <div class="pagination-lozenge" style="float; left;">
+                <a href="{{pagination.href.previous}}">newer</a>
+            </div>
+        {% endif %}
+        {% if pagination.pageNumber < pagination.hrefs.length - 1 %}
+            <div class="pagination-lozenge" style="float: right;">
+                <a href="{{pagination.href.next}}">older</a>
+            </div>
+        {% endif%}
+    </div>
+    <div style="clear:both"></div>
 </div>
