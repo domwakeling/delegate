@@ -3,6 +3,6 @@
   publish = "_site"
 
 [[headers]]
-  for = "/images/logo.jpg"
+  for = "/images/logo.png"
   [headers.values]
 	cache-control = "max-age=2678400, public"
