@@ -4,6 +4,10 @@ const data = [
         "link": "/",
     },
     {
+        "text": "Articles",
+        "link": "/articles"
+    },
+    {
         "text": "About",
         "link": "/about",
     },

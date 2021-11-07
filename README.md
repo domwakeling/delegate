@@ -3,6 +3,8 @@
 > *This repo **was** originally going to contain the code for a business website for a friend,
 > but since (happily) she found alterative employment, it's now going to be used a test-bed.*
 
+> The live site is [hosted on netlify](https://delegate-site.netlify.app/).
+
 ## Briefing
 
 Project is to build a business landing page with options for articles to be posted (intended for
@@ -32,5 +34,5 @@ The essence is:
 * make the containing folder a passthroughCopy in the `.eleventy.js` config
 * add Netlify Identify and Git Gateway settings in the Netlify console
 
-I found this *mildly* challenging &mdash; for some reason the Git Gateway was very flakey initially
+I found this *mildly* challenging &mdash; for some reason the Git Gateway was very flaky initially
 &mdash; but once everthing is set up and properly propogated it seems to be absolutely fine.
