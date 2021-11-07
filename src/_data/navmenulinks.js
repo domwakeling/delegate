@@ -5,7 +5,7 @@ const data = [
     },
     {
         "text": "Articles",
-        "link": "/articles"
+        "link": "/articles/page-1"
     },
     {
         "text": "About",
