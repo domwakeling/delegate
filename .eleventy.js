@@ -52,6 +52,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"src/images": "./images"});
     eleventyConfig.addPassthroughCopy('src/admin');
 
+    // copy from src/_includes/favicons to the root
+    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "." })
+
     // image processing functions as shortcodes
     eleventyConfig.addNunjucksAsyncShortcode("fullWidthImage", generateFullWidthImage);
 

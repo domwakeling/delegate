@@ -10,3 +10,6 @@ _not_for_git
 
 // stupid Apple files
 .DS_Store
+
+// ignore design files
+_design

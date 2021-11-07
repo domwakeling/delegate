@@ -20,19 +20,23 @@ metacontent: META CONTENT REQUIRED
             rel="stylesheet"
         >
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
     <body>
         <nav id="main-nav">
-            {% include "navbar.njk" %}
+            {% include "components/navbar.njk" %}
         </nav>
-        <div class="container">
-            {{ content | safe }}
-            <div class="row">
-                <hr class="bg-c500" style="clear: both"/>
-                {% include "footer.njk" %}
-            </div>
-        </div><!-- /div.container -->
+        <div class="content">
+            <div class="container">
+                {{ content | safe }}
+            </div><!-- /div.container -->
+            <br />
+        </div><!-- /div.content -->
+        {% include "components/footer.njk" %}
         <script>
             if (window.netlifyIdentity) {
                 console.log(window.netlifyIdentity)

@@ -19,7 +19,8 @@ user (tech-savvy but not a developer) could make minor updates and add articles.
 * [Netlify](https://www.netlify.com/) for web-hosting
 * *contact form still to be decided*
 
----
+Shout-outs and thanks:
+* [favicon.io](https://favicon.io/favicon-generator/) for painless favicons
 
 ## NetlifyCMS
 
