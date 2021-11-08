@@ -4,7 +4,15 @@
 
 [[headers]]
   # cache-control for the logo (in navs so noticeable)
-  for = "/images/logo.png"
+  for = "*.png"
+  [headers.values]
+    cache-control = '''
+    max-age=2678400,
+    public'''
+
+[[headers]]
+  # cache-control for the logo (in navs so noticeable)
+  for = "*.jpg"
   [headers.values]
     cache-control = '''
     max-age=2678400,
