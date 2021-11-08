@@ -28,5 +28,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["article"] }
-      - { label: "Layout", name: "layout", widget: "string", default: "layouts/base.njk" }      
+      - { label: "Layout", name: "layout", widget: "string", default: "layouts/article.njk" }      
       - { label: "Body", name: "body", widget: "markdown" }

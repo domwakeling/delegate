@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk 
+layout: layouts/article.njk 
 title: This Is My Really First Ever Post
 date: 2018-05-30
 tags: ['article']

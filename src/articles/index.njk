@@ -17,6 +17,7 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
                     <a href="{{ article.url }}">
                         <h2 class="as-h3">{{ article.data.title }}</h2>
                     </a>
+                    {{ article.templateContent | safe }}
                 </div>
             </div>  
         {% endfor %}
