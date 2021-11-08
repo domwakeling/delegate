@@ -4,18 +4,13 @@ title: Delegate - Articles
 pagination:
   data: collections.article
   reverse: true
-  size: 6
+  size: 3
 permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
 ---
 
 <div class="row">
     <h1>Articles</h1>
-    
-    <!-- most recent article -->
-    {% set mostRecent = collections.article[collections.article.length - 1] %}
-    <h3 class="as-h3">{{ mostRecent.data.title }}</h3>
-    {{ mostRecent.templateContent | safe }}
-    <h2>All Articles</h2>
+    <!-- paginated articles -->
     <div class="article-container">
         {% for article in pagination.items %}
             <div class="article">
@@ -43,4 +38,11 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
         {% endif%}
     </div>
     <div style="clear:both"></div>
+    
+    <!-- most recent article -->
+    {% set mostRecent = collections.article[collections.article.length - 1] %}
+    <h3 class="as-h3">{{ mostRecent.data.title }}</h3>
+    {{ mostRecent.templateContent | safe }}
+    
+    
 </div>

@@ -6,6 +6,7 @@ hr {
 }
 
 blockquote {
+    margin-left: 0px;
     border-left: 0.5rem solid $color_p700;
     padding-left: 1.0rem;
     &.d100 {
