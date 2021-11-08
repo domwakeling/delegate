@@ -1,6 +1,6 @@
 ---
 title: What's a CMS?
-date: 2021-11-09T20:00:00.000Z
+date: 2021-11-08T20:00:00.000Z
 tags:
   - article
 layout: layouts/article.njk

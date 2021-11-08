@@ -17,3 +17,11 @@
     cache-control = '''
     max-age=2678400,
     public'''
+
+[[headers]]
+  # cache-control for the logo (in navs so noticeable)
+  for = "*.jpeg"
+  [headers.values]
+    cache-control = '''
+    max-age=2678400,
+    public'''
