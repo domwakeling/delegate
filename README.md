@@ -2,7 +2,7 @@
 
 > *This repo **was** originally going to contain the code for a business website for a friend,
 > but since (happily) she found alterative employment, it's now going to be used a test-bed.*
-
+>
 > The live site is [hosted on netlify](https://delegate-site.netlify.app/).
 
 ## Briefing

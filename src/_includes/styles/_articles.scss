@@ -31,3 +31,10 @@
     border-radius: 0.5rem;
     bottom: 5px;
 }
+
+.article-content {
+    img {
+        max-width: 100%;
+        box-shadow: 0 0 1rem $color_g700;
+    }
+}

@@ -8,4 +8,6 @@ metacontent: []
     <h1>Article: {{ title}} </h1>
 </div>
 <div class="article-date">{{ date | readableDate }}</div>
-{{ content | safe }}
+<div class='article-content'>
+    {{ content | safe }}
+</div>

@@ -42,7 +42,9 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
     <!-- most recent article -->
     {% set mostRecent = collections.article[collections.article.length - 1] %}
     <h3 class="as-h3">{{ mostRecent.data.title }}</h3>
-    {{ mostRecent.templateContent | safe }}
+    <div class="article-content">
+        {{ mostRecent.templateContent | safe }}
+    </div>
     
     
 </div>
