@@ -10,19 +10,26 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
 
 <div class="row">
     <h1>Articles</h1>
+    
+    <!-- most recent article -->
+    {% set mostRecent = collections.article[collections.article.length - 1] %}
+    <h3 class="as-h3">{{ mostRecent.data.title }}</h3>
+    {{ mostRecent.templateContent | safe }}
+    <h2>All Articles</h2>
     <div class="article-container">
         {% for article in pagination.items %}
             <div class="article">
                 <div class="article-content">
                     <a href="{{ article.url }}">
-                        <h2 class="as-h3">{{ article.data.title }}</h2>
+                        <h3>{{ article.data.title }}</h3>
                     </a>
-                    {{ article.templateContent | safe }}
+                    <div class="article-date">{{ article.data.date | readableDate }}</div>
                 </div>
             </div>  
         {% endfor %}
     </div>
     <br />
+    <!-- newer / older buttons dependent on page -->
     <div class="pagination-container">
         {% if pagination.pageNumber > 0 %}
             <div class="pagination-lozenge" style="float; left;">

@@ -12,6 +12,7 @@
 
         .article-content {
             padding: 1rem;
+            
             a {
                 h1, h2, h2, h3, h4, h5 {
                     color: $color_p300 !important;
@@ -21,16 +22,12 @@
     }
 }
 
-.pagination-container {
-    .pagination-lozenge {
-        display: inline-block;
-        background-color: $color_p300;
-        padding: 1rem;
-        border-radius: 1rem;
-        a {
-            color: $color_p900;
-            text-decoration: none;
-        }
-        cursor: pointer;
-    }
+.article-date {
+    display: inline-block;
+    position: relative;
+    background-color: $color_g300;
+    color: $color_g900;
+    padding: 0.5rem 1.0rem;
+    border-radius: 0.5rem;
+    bottom: 5px;
 }

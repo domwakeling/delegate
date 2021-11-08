@@ -48,14 +48,21 @@ module.exports = function (eleventyConfig) {
         return JSON.stringify(value);
     });
 
+    // filter to turn a datestring into human readable date
+    eleventyConfig.addNunjucksFilter("readableDate", function(date) {
+        const months = ["January", "February", "March", "April", "May", "June", "July",
+                        "August", "September", "October", "November", "December"];;
+        return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+    })
+    
     // copy the src/images & src/admin folders
     eleventyConfig.addPassthroughCopy({"src/images": "./images"});
     eleventyConfig.addPassthroughCopy('src/admin');
 
     // copy from src/_includes/favicons to the root
-    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "." })
+    eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "." });
 
-    // image processing functions as shortcodes
+    // image processing functions as shortcodes - (i) for 'hero' images, 1920 or 960 wide
     eleventyConfig.addNunjucksAsyncShortcode("fullWidthImage", generateFullWidthImage);
 
     // because we're making a function we need to return the "normal" exports object

@@ -1,8 +1,9 @@
 ---
-layout: layouts/article.njk 
 title: This Is My First Ever Post
-date: 2019-05-30
-tags: ['article']
+date: 2019-05-30T21:00:00.000Z
+tags:
+  - article
+layout: layouts/article.njk 
 ---
 This is the first post on my blog.
  
