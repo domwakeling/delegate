@@ -10,13 +10,15 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
 
 <div class="row">
     <h1>Articles</h1>
-    <div class="article-container">
+    <div class="article-row">
         <!-- newer arrow if applicable -->
         <div>
             {% if pagination.pageNumber > 0 %}
-                <div class="pagination-lozenge lozenge-active" style="float; left;">
-                    <a href="{{pagination.href.previous}}">&larr;</a>
-                </div>
+                <a href="{{pagination.href.previous}}">
+                    <div class="pagination-lozenge lozenge-active" style="float; left;">
+                        &larr;
+                    </div>
+                </a>
             {% else %}
                 <div class="pagination-lozenge lozenge-off" style="float; left;">
                     &larr;
@@ -25,25 +27,29 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
         </div>
 
         <!-- paginated articles -->
-        {% for article in pagination.items %}
-            <div class="article">
-                <div class="article-content">
-                    <a href="{{ article.url }}">
-                        <h3>{{ article.data.title }}</h3>
-                    </a>
-                    <div class="article-date">{{ article.data.date | readableDate }}</div>
-                </div>
-            </div>  
-        {% endfor %}
+        <div class="article-container">
+            {% for article in pagination.items %}
+                <div class="article">
+                    <div class="article-content">
+                        <a href="{{ article.url }}">
+                            <h3 class="as-h4">{{ article.data.title }}</h3>
+                        </a>
+                        <div class="article-date">{{ article.data.date | readableDate }}</div>
+                    </div>
+                </div>  
+            {% endfor %}
+        </div>
 
         <!-- older arrow if applicable -->
         <div>
             {% if pagination.pageNumber < pagination.hrefs.length - 1 %}
-                <div class="pagination-lozenge lozenge-active" style="float: right;">
-                    <a href="{{pagination.href.next}}">&rarr;</a>
-                </div>
+                <a href="{{pagination.href.next}}">
+                    <div class="pagination-lozenge lozenge-active" style="float: right;">
+                        &rarr;
+                    </div>
+                </a>
             {% else %}
-                <div class="pagination-lozenge lozenge-off" style="float; left;">
+                <div class="pagination-lozenge lozenge-off" style="float: right;">
                     &rarr;
                 </div>
             {% endif%}

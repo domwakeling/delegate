@@ -1,24 +1,32 @@
-.article-container {
+.article-row {
     display: grid;
-    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-columns: 50px 1fr 50px;
     column-gap: 1rem;
     row-gap: 1rem;
 
-    .article {
-        background-color: $color_p900;
-        color: $color_p100;
-        width: 100%;
-        border-radius: 1rem;
+    .article-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
 
-        .article-content {
-            padding: 1rem;
-            
-            a {
-                h1, h2, h2, h3, h4, h5 {
-                    color: $color_p300 !important;
+        .article {
+            background-color: $color_p900;
+            color: $color_p100;
+            width: 100%;
+            border-radius: 1rem;
+
+            .article-content {
+                padding: 1rem;
+                
+                a {
+                    h1, h2, h2, h3, h4, h5 {
+                        color: $color_p300 !important;
+                    }
                 }
             }
         }
+
     }
 }
 
