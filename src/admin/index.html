@@ -10,9 +10,34 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-
+    <!-- Preview style -->
     <script>
       CMS.registerPreviewStyle("/css/style.css");
+    </script>
+    <!-- Preview layout -->
+    <script>
+      let readableDate = function(date) {
+        const months = ["January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December"];;
+        return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+      }
+
+      var ArticlePreview = createClass({
+        render: function () {
+          var entry = this.props.entry;
+          return html`
+          <div class="row">
+            <h1>Article: ${entry.getIn(['data', 'title'])} </h1>
+            <div class="article-date">${readableDate(entry.getIn(['data', 'date'], new Date()))}</div>
+          </div>
+          <div class='article-content row'>
+            ${this.props.widgetFor('body')}
+          </div>
+          `
+        }
+      });
+
+      CMS.registerPreviewTemplate("article", ArticlePreview);
     </script>
   </body>
 </html>
