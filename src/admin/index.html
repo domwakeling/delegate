@@ -25,15 +25,13 @@
       var ArticlePreview = createClass({
         render: function () {
           var entry = this.props.entry;
-          return html`
-          <div class="row">
-            <h1>Article: ${entry.getIn(['data', 'title'])} </h1>
-            <div class="article-date">${readableDate(entry.getIn(['data', 'date'], new Date()))}</div>
-          </div>
-          <div class='article-content row'>
-            ${this.props.widgetFor('body')}
-          </div>
-          `
+          return h('div', {},
+            h('div', {'className': 'row'},
+              h('h1', entry.getIn(['data', 'title'])),
+              h('div', {'className': 'article-date'}, readableDate(entry.getIn(['data', 'date'], new Date())))
+            ),
+            h('div', {'classname': 'article-content row'}, this.props.widgetFor('body'))
+          );
         }
       });
 
