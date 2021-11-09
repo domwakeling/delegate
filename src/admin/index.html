@@ -28,9 +28,9 @@
           return h('div', {},
             h('div', {'className': 'row'},
               h('h1', {}, entry.getIn(['data', 'title'])),
-              h('div', {'className': 'article-date'}, readableDate(entry.getIn(['data', 'date'], new Date())))
-            ),
-            h('div', {'classname': 'article-content row'}, this.props.widgetFor('body'))
+              h('div', {'className': 'article-date'}, readableDate(entry.getIn(['data', 'date'], new Date()))),
+              h('div', {'classname': 'article-content'}, this.props.widgetFor('body'))
+            )
           );
         }
       });
