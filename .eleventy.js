@@ -55,9 +55,10 @@ module.exports = function (eleventyConfig) {
         return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
     })
     
-    // copy the src/images & src/admin folders
+    // copy the src/images, src/admin and src/js folders
     eleventyConfig.addPassthroughCopy({"src/images": "./images"});
     eleventyConfig.addPassthroughCopy('src/admin');
+    eleventyConfig.addPassthroughCopy({ "src/js": "./js" });
 
     // copy from src/_includes/favicons to the root
     eleventyConfig.addPassthroughCopy({ "src/_includes/favicons": "." });

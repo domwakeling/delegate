@@ -8,18 +8,22 @@
             <div class="icon-bar"></div>
         </button>
         <div>
-            <img
-                src="/images/logo.png"
-                style="height: 32px; position: relative; bottom: 5px; padding-right: 20px;"
-            />
+            <a href="/">
+                <img
+                    src="/images/logo.png"
+                    style="height: 32px; position: relative; bottom: 5px; padding-right: 20px;"
+                    alt="Delegate logo"
+                />
+            </a>
             <ul>
                 {%- for item in links -%}
-                <li>
+                <li class="menu-wide">
                     <a href="{{ item.link }}">
                         {{ item.text }}
                     </a>
                 </li>
                 {%- endfor -%}
+                <li>&nbsp;</li>
             </ul>
         </div>
         <div id="menu-responsive">

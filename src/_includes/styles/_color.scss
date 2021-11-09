@@ -1,6 +1,6 @@
 // $color_primary: #6286f2;
 $color_primary: lighten(rgb(2, 3, 236), 15%);
-$color_complementary: desaturate(darken(#FCDA3D, 10%), 25%);
+$color_complementary: darken(saturate(#FCDA3D, 25%), 5%);
 
 $color_p100: darken($color_primary, 45%);
 $color_p300: darken($color_primary, 15%);

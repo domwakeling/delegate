@@ -18,6 +18,12 @@
             &:first-of-type {
                 padding-left: 0;
             }
+
+            &.menu-wide {
+                @include for-tablet-down {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -41,15 +47,19 @@
                 clear: both;
                 position: relative;
                 display: block;
-                a {
-                    float: none;
-                    display: block;
-                    text-align: left;
-                    padding-top: 0.4em;
-                    padding-bottom: 0.4em;
-                    border-bottom: 1px solid $color_p900;
-                    &:last-child {
-                        border-bottom: none !important;
+                ul {
+                    margin-bottom: 0px;
+                    a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                        padding-top: 0.4em;
+                        padding-bottom: 0.4em;
+                        line-height: 1.0rem;
+                        border-bottom: 1px solid $color_p900;
+                        &:last-child {
+                            border-bottom: none !important;
+                        }
                     }
                 }
             }

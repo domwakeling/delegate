@@ -6,8 +6,8 @@ metacontent: []
 
 <div class="row">
     <h1>Article: {{ title}} </h1>
+    <div class="article-date">{{ date | readableDate }}</div>
 </div>
-<div class="article-date">{{ date | readableDate }}</div>
-<div class='article-content'>
+<div class='article-content row'>
     {{ content | safe }}
 </div>
