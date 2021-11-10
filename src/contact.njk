@@ -8,13 +8,16 @@ title: Delegate - Contact Us
 </div>
 
 <div class="row">
-    <p>Please enter your contact details below.</p>
+    <p>If you're interested in having a website developed, please enter your contact details below.</p>
+    <p>This form is powered by <a href="https://docs.netlify.com/forms/setup/">Netlify forms</a>.</p>
+    <br />
     <form
         class="contact-form"
         name="contactform"
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field"
+        action="/success"
     >
         <div hidden aria-hidden="true">
             <label>
@@ -22,15 +25,20 @@ title: Delegate - Contact Us
                 <input name="bot-field" />
             </label>
         </div>
-        <div>
+        <div class="form-row">
             <label for="name">Your name</label>
-            <input type="text" name="name" placeholder="Name"  id="name" required />
+            <input type="text" name="name" placeholder="name"  id="name" required />
         </div>
-        <div>
-            <label for="email">Your email address</label>
-            <input type="email" name="email" placeholder="Email"  id="email" required />
+        <div class="form-row">
+            <label for="email">Your email</label>
+            <input type="email" name="email" placeholder="email"  id="email" required />
         </div>
-        <div>
+        <div class="form-row">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="button-row">
+            <div class="button-spacer"></div>
             <button type="submit">Submit</button>
         </div>
     </form>
