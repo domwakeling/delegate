@@ -1,0 +1,19 @@
+div.triple-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    div.reason-box {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+img.homepage-icon {
+    height: 100px;
+    width: 100px;
+    margin: 1.0rem 0;
+}
+
+.banner-header, .reason-text {
+    text-align: center;
+}
