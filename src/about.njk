@@ -1,12 +1,11 @@
 ---
 layout: layouts/base.njk
-title: About ...TODO
-description: TODO
+title: Delegate - About
 ---
 
 <div class="row">
     <h1>About</h1>
-    <h2>Hi there!</h2>
+    <p class="larger">Hi there!</p>
     <!-- img should have two sources, 300 & 600w, css will set at 50% for pixels -->
     <img
         class="headshot"
@@ -15,27 +14,23 @@ description: TODO
         src="/images/dom600x800.png"
         alt="Dom Wakeling"
     />
-    <div class="larger">
+    <div>
         <p>I'm Dom Wakeling, a web developer.</p>
-        <p>This isn't really a website for a Virtual PA &mdash; it was <b>going</b> to be,
-            but happily the person I was building it for has found another job.</p>
-        <p>Since I was already part-way through building the site, I thought
-            I'd finish it off anyway to show what I can build.</p>
-        <p>The site is deliberately quite simple &mdash; it was never intended to be more than a
-            landing page and a contact form. What it <b>is</b> though is a demonstration of how to
-            implement that simple page on the <i>JAMstack</i> as static web pages.</p>
-        <p>If that's too much jargon, <b>the point</b> is that the site is fast to load, easy to
-            update and <b>very</b> cheap to host &mdash; in fact, ideally it should be <b>free</b>
-            to host, although you would still need to pay for a nice domain name.</p>
-        <p>If you need your own site developed, or have any other development needs, I'm good with:</p>
-        <ul>
-            <li>general web development</li>
-            <li>JavaScript (including Node.js)</li>
-            <li>common JS frameworks/libraries such as React, Meteor, Next.js and D3.js</li>
-            <li>static site generators, particularly Gatsby and Eleventy (11ty)</li>
-            <li>WordPress</li>
-            <li>Python (including Flask)</li>
-        </ul>
-        <p>Please feel free to get in touch!</p>
+        <p>Originally this website was intended to be a landing page/lead generator for a friend,
+            but they started a different job and so I decided to use it to show what can be
+            achieved on a static website.</p>
+        <p>All the pages on this site are <i>pre-rendered</i> when the site is deployed to Netlify;
+            that means that Netlify can store copies of the pages on servers across the world; and
+            <b>that</b> means that anyone who visits the site, wherever they are in the world, gets
+            to see the website super-fast without having to wait for it to load.</p>
+        <p>Despite being pre-rendered, the site has a <a href="/contact">contact form</a> and
+            authorised users can access a <a href="/articles/2021-11-10-adding-a-form">web-based
+            CMS</a> to edit or add new articles.</p>
+        <blockquote>
+            <h2 class="as-h3">TL;DR</h2>
+            <p>The site is fast to load, cheap (in fact, free) to host, and easy to maintain.</p>
+        </blockquote>
+        <p>If you're interested in having a website built, please <a href="/contacts/">get in
+            touch</a>.</p>
     </div>
 </div>
