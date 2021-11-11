@@ -10,7 +10,11 @@ description: Index
         If you view the page on a mobile phone, you should see that the image below fills the
         width of the screen, whilst the text margins for this paragraph are slightly indented.</p>
 </div>
-{% fullWidthImage './src/images/hero_1920.jpg', "Moody keyboard hero image" %}
+<div class="aspect-ratio-box">
+    <div class="aspect-ratio-box-inside">
+        {% fullWidthImage './src/images/hero_2400.jpg', "Moody keyboard hero image", "auto" %}
+    </div>
+</div>
 <div class="row">
     <p>Whereas if you use a larger device, you will see that the image above is centred with
         a margin either side (width of the margin depends on the screen) and the text margins are

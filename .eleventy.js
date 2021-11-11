@@ -3,22 +3,22 @@ const sass = require('sass');
 const CleanCSS = require("clean-css");
 const Image = require("@11ty/eleventy-img");
 
-async function generateFullWidthImage(src, alt) {
+async function generateFullWidthImage(src, alt, lazy) {
     let metadata = await Image(src, {
-        widths: [960, 1920],
-        formats: ["jpeg"],
+        widths: [899, 2400],
+        formats: ["jpeg", "webp"],
         outputDir: "./_site/images/",
         urlPath: "/images"
     });
-    let data = metadata.jpeg;
-    console.log(data[0].url);
-    return (`<img srcset="${data[0].url}, ${data[1].url} 2x"
-                  src="${data[0].url}"
-                  alt="${alt}"
-                  loading="lazy"
-                  style="width:100%"
-                  decoding="async" >`)
-    // return `<img src="${data.url}" alt="${alt}" class="tweet_img" loading="lazy" decoding="async">`;
+    let jpeg = metadata.jpeg;
+    let webp = metadata.webp;
+    return (`<picture class="aspect-ratio-box-inside">
+                <source media="(max-width: 899px)" srcset="${webp[0].url}" type="image/webp">
+                <source media="(max-width: 899px)" srcset="${jpeg[0].url}" type="image/jpeg">
+                <source media="(min-width: 900px)" srcset="${webp[1].url}" type="image/webp">
+                <source media="(min-width: 900px)" srcset="${jpeg[1].url}" type="image/jpeg">
+                <img src="${jpeg[1].url}" alt="${alt}" style="width:100%" loading="${lazy}">
+            </picture>`)
 }
 
 module.exports = function (eleventyConfig) {

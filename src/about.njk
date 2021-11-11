@@ -7,13 +7,18 @@ title: Delegate - About
     <h1>About</h1>
     <p class="larger">Hi there!</p>
     <!-- img should have two sources, 300 & 600w, css will set at 50% for pixels -->
-    <img
+    <picture>
+        <source media="(max-width: 600px)" srcset="/images/dom300x400.png">
+        <source media="(min-width: 601px)" srcset="/images/dom600x800B.png">
+        <img src="/images/dom600x800.png" alt="Dom Wakeling" class="headshot" loading="auto">
+    </picture>
+    {# <img
         class="headshot"
         srcset="/images/dom300x400.png 300w, /images/dom600x800B.png 600w"
         sizes="(max-width: 600px) 300px, 600px"
         src="/images/dom600x800.png"
         alt="Dom Wakeling"
-    />
+    /> #}
     <div>
         <p>I'm Dom Wakeling, a web developer.</p>
         <p>Originally this website was intended to be a landing page/lead generator for a friend,
