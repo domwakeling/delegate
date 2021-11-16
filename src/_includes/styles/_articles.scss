@@ -42,9 +42,9 @@
 .article-date {
     display: inline-block;
     position: relative;
-    border: 1px solid $color_c100;
-    background-color: $color_c500;
-    color: $color_p100;
+    // border: 1px solid $color_c100;
+    background-color: $color_p300;
+    color: $color_p900;
     padding: 0.5rem 1.0rem;
     border-radius: 0.5rem;
     bottom: 5px;
@@ -64,7 +64,6 @@ img {
 .pagination-lozenge {
     display: inline-block;
     position: relative;
-    top: 3.0rem;
     padding: 0.5rem 1.0rem;
     border-radius: 1.0rem;
     
@@ -81,4 +80,8 @@ img {
 
 .lozenge-off {
     background-color: $color_g700;
+}
+
+.arrow-div {
+    align-self: center;
 }

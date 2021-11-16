@@ -12,7 +12,7 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
     <h1>Articles</h1>
     <div class="article-row">
         <!-- newer arrow if applicable -->
-        <div>
+        <div class="arrow-div">
             {% if pagination.pageNumber > 0 %}
                 <a href="{{pagination.href.previous}}">
                     <div class="pagination-lozenge lozenge-active" style="float; left;">
@@ -41,7 +41,7 @@ permalink: "articles/page-{{ pagination.pageNumber + 1 }}/index.html"
         </div>
 
         <!-- older arrow if applicable -->
-        <div>
+        <div class="arrow-div">
             {% if pagination.pageNumber < pagination.hrefs.length - 1 %}
                 <a href="{{pagination.href.next}}">
                     <div class="pagination-lozenge lozenge-active" style="float: right;">
