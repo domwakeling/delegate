@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "_site"
+  functions = "functions"
 
 [[headers]]
   # cache-control for the logo (in navs so noticeable)

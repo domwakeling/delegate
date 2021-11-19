@@ -9,63 +9,62 @@ description: Welcome to Delegate
 
 <div class="row">
     <h1>Welcome to Delegate</h1>
-    <p>This site is a demonstration of what can be achieved through a <strong>static site
-        generator</strong> paired with a <strong>headless content management system</strong>. The
-        result is a website that is quick to load, cheap (indeed, in this case free) to run, and
-        easy to update.</p>
-    <p>Have a look at some of the <a href="/articles">articles</a> to find out more
-        about using a <a href="/articles/2021-11-07-whats-a-static-website/">static site</a>
-        combined with a <a href="/articles/2021-11-08-whats-a-cms/">content management system</a>,
-        and why <strong>you</strong> might want to consider it. As a hint ...</p>
-
+    <p class="larger">This site is a demonstration of what can be achieved through a <strong>static
+        site generator</strong> paired with a <strong>headless content management system</strong>.
+        The result is a website that is <strong>quick</strong> to load, <strong>cheap</strong>
+        (indeed, in this case free) to run, and <strong>easy</strong> to update.</p>
 </div>
 
-</div><!-- /div.container -->
-
 <div class="bg-p500 col-p900 banner">
-    <div class="container">
-        <div class="row">
-            <h2 class="as-h1 banner-header col-p900">Static Site Benefits</h2>
-            <div class="triple-container">
-                <div>
-                    <div class="reason-box">
-                        <img class="homepage-icon" src="/images/clock.svg" alt="time" />
-                    </div>
-                    <p class="reason-text larger">Quicker to load</p>
+    <div class="row">
+        {# <h2 class="as-h1 banner-header col-p900">Static Site Benefits</h2> #}
+        <div class="triple-container">
+            <div>
+                <div class="reason-box">
+                    <img class="homepage-icon" src="/images/clock.svg" alt="time" />
                 </div>
-                <div>
-                    <div class="reason-box">
-                        <img class="homepage-icon" src="/images/sterling.svg" alt="money" />
-                    </div>
-                    <p class="reason-text larger">Cheap to host</p>
+                <p class="reason-text larger">Quicker to load</p>
+            </div>
+            <div>
+                <div class="reason-box">
+                    <img class="homepage-icon" src="/images/sterling.svg" alt="money" />
                 </div>
-                <div>
-                    <div class="reason-box">
-                        <img class="homepage-icon" src="/images/tick.svg" alt="easy" />
-                    </div>
-                    <p class="reason-text larger">Easy to maintain</p>
+                <p class="reason-text larger">Cheap to host</p>
+            </div>
+            <div>
+                <div class="reason-box">
+                    <img class="homepage-icon" src="/images/tick.svg" alt="easy" />
                 </div>
+                <p class="reason-text larger">Easy to maintain</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container"><!-- must include an opening container div if closed previously -->
-    <div class="row">
-            <blockquote>
-            <h2 class="as-h3">TL;DR</h2>
-            <p>If <strong>you</strong> would like a website that is <strong>quick</strong>,
-                <strong>cheap</strong> and <strong>easy</strong> to maintain, then please
-                <a href="/contact">get in touch</a>!</p>
-        </blockquote>
-        <br />
-        <!-- most recent article -->
-        {% set mostRecent = collections.article[collections.article.length - 1] %}
-        <hr />
-        <h3 class="as-h3">Latest Article: {{ mostRecent.data.title }}</h3>
-        <div class="article-content">
-            {{ mostRecent.templateContent | safe }}
-        </div>
-
+<div class="row">
+    <p class="larger">With modern web development, alongisde the benefits of a static site we can
+        still have:</p>
+    <ul>
+        <li class="larger">
+            a <a href="/articles/2021-11-09-netlifycms">content management system</a> (letting
+            you run a blog, write articles, or otherwise update content)
+        </li>
+        <li class="larger">
+            a <a href="/payments">payment system</a>
+        </li>
+        <li class="larger">
+            and a <a href="/contact">contact form</a>
+        </li>
+    </ul>
+    
+    <br />
+    <!-- most recent article -->
+    {% set mostRecent = collections.article[collections.article.length - 1] %}
+    <hr />
+    <h3 class="as-h3">Latest Article: {{ mostRecent.data.title }}</h3>
+    <div class="article-content">
+        {{ mostRecent.templateContent | safe }}
     </div>
+
+</div>
 

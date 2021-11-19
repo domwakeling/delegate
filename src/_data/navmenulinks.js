@@ -8,12 +8,16 @@ const data = [
         "link": "/articles/page-1"
     },
     {
-        "text": "About",
-        "link": "/about",
-    },
-    {
         "text": "Contact",
         "link": "/contact",
+    },
+    {
+        "text": "Tip Jar",
+        "link": "/payment",
+    },
+    {
+        "text": "About",
+        "link": "/about",
     }
 ];
 

@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+title: Tip jar
+description: Tpi jar
+includepayment: true
+---
+
+<div class="row">
+    <h1>Tip jar!</h1>
+
+    <form action="/.netlify/functions/stripe" method="POST">
+      <button type="submit">Buy me a coffee!</button>
+    </form>
+    
+</div>

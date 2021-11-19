@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run dev",
-    "dev": "eleventy --serve",
+    "start": "npx netlify dev",
+    "//dev": "eleventy --serve",
+    "dev": "npx netlify dev",
     "build": "eleventy"
   },
   "keywords": [],
@@ -17,6 +18,10 @@
     "@11ty/eleventy-img": "^1.0.0",
     "clean-css": "^5.2.2",
     "js-beautify": "^1.13.0",
+    "netlify-cli": "^7.0.2",
     "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "stripe": "^8.190.0"
   }
 }

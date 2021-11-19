@@ -2,6 +2,7 @@
 title: TITLE REQUIRED
 description: Welcome to Delegate
 metacontent: []
+includepayment: false
 ---
 
 <!doctype html>
@@ -43,6 +44,11 @@ metacontent: []
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        {% if includepayment %}
+        <script src="https://js.stripe.com/v3/"></script>
+        {% endif %}
+        {% block payment_block %}
+        {% endblock %}
     </head>
     <body>
         <nav id="main-nav">
