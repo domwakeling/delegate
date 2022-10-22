@@ -15,8 +15,11 @@ exports.handler = async (event, context) => {
                     currency: "gbp",
                     product_data: {
                         name: "coffee",
+                        images: [
+                            "https://delegate-site.netlify.app/iamges/coffee.jpg"
+                        ]
                     },
-                    unit_amount: 200,
+                    unit_amount: 250,
                 },
                 quantity: 1,
             },
