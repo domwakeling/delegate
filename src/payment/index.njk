@@ -8,8 +8,12 @@ includepayment: true
 <div class="row">
     <h1>Tip jar</h1>
     <p class="larger">It's easy to integrate payments using <a href="https://stripe.com/"
-        location="_offsite">Stripe</a>.</p>
-    <p class="larger">Click on the button below to see the payment interface
+        location="_offsite">Stripe</a> &mdash; and the processing fees are pretty reasonable.</p>
+    <img
+        src="/images/stripe_checkout.jpg" alt="Strip checkout example")
+        class="payment-img"
+    />
+    <p class="larger">Click on the button below to see the live payment interface
         (and if you want, you can actually buy me a coffee!)</p>
     <form action="/.netlify/functions/stripe" method="POST">
         <button class="payment-btn" type="submit">Buy me a coffee!</button>

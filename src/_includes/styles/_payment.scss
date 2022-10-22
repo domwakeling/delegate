@@ -5,3 +5,9 @@ button.payment-btn {
     border: none;
     padding: 0.5rem 1.00rem;
 }
+
+.payment-img {
+    max-width: 100%;
+    box-shadow: 0 0 1rem $color_g700;
+    border-radius: 0.5em;
+}
