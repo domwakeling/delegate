@@ -61,7 +61,7 @@ description: Welcome to Delegate
     <!-- most recent article -->
     {% set mostRecent = collections.article[collections.article.length - 1] %}
     <hr />
-    <h3 class="as-h3">Latest Article: {{ mostRecent.data.title }}</h3>
+    <h2 class="as-h3">Latest Article: {{ mostRecent.data.title }}</h3>
     <div class="article-content">
         {{ mostRecent.templateContent | safe }}
     </div>

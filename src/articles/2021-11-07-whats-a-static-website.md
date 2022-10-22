@@ -9,7 +9,7 @@ layout: layouts/article.njk
 So you've heard someone refer to 'static websites' and either sung thier praises or cursed them.
 What on earth are they talking about?
 
-> ### TL;DR
+> ## TL;DR
 >
 > Static websites are fast for your users and relatively cheap (sometimes free) to run. Those
 > benefits have a cost though &mdash; they **can** be harder to work with. But &mdash; as this

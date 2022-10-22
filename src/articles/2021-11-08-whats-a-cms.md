@@ -9,7 +9,7 @@ layout: layouts/article.njk
 In the [previous article](/articles/2021-11-07-whats-a-static-website/) we briefly talked about
 a CMS. So what's that mean?
 
-> ### TL;DR
+> ## TL;DR
 >
 > A CMS, or Content Management System, is a way of &mdash; you guessed it &mdash; managing your
 > content.
