@@ -1,6 +1,7 @@
 ---
 title: What's A Static Website?
 date: 2021-11-07T20:00:00.000Z
+description: What are static websites and why are they important?
 tags:
   - article
 layout: layouts/article.njk

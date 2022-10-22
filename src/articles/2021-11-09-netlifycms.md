@@ -1,6 +1,7 @@
 ---
 title: NetlifyCMS
 date: 2021-11-09T20:00:00.000Z
+description: Introduction to NetlifyCMS
 tags:
   - article
 layout: layouts/article.njk

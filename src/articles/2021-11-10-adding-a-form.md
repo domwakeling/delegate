@@ -1,6 +1,7 @@
 ---
 title: Adding A Form
 date: 2021-11-10T20:00:00.000Z
+description: Adding a form using Netlify Forms
 tags:
   - article
 layout: layouts/article.njk

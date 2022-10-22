@@ -1,6 +1,7 @@
 ---
 title: What's a CMS?
 date: 2021-11-08T20:00:00.000Z
+description: What is a Content Management System?
 tags:
   - article
 layout: layouts/article.njk
