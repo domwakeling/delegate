@@ -13,3 +13,5 @@ _not_for_git
 
 // ignore design files
 _design
+# Local Netlify folder
+.netlify
