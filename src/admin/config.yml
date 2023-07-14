@@ -14,7 +14,7 @@ site_url: https://delegate-site.netlify.app/
 # including a display_url will mean there's a link in your CMS to that URL
 display_urL: https://delegate-site.netlify.app/
 
-# Uncomment below to have a curstom logo image rather than the default; make it 300sq transparent
+# Uncomment below to have a custom logo image rather than the default; make it 300sq transparent
 #logo_url: /images/logo.png
 
 collections:

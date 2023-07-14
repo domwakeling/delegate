@@ -11,6 +11,7 @@ includepayment: false
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ description }}">
+        <meta name="generator" content="Eleventy">
         {% for item in metacontent %}
             <meta name="{{ item[0] }}" content="{{ item[1] }}">
         {% endfor %}
@@ -51,15 +52,16 @@ includepayment: false
         {% endblock %}
     </head>
     <body>
+        <a class="skip-link" href='#main'>Skip to content</a>
         <nav id="main-nav">
             {% include "components/navbar.njk" %}
         </nav>
-        <div class="content">
+        <main id="main" class="content">
             <div class="container">
                 {{ content | safe }}
             </div><!-- /div.container -->
             <br />
-        </div><!-- /div.content -->
+        </main><!-- /div.content -->
         {% include "components/footer.njk" %}
         <script>
             if (window.netlifyIdentity) {
